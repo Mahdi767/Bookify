@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- Daisy UI -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/daisyui@5"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!--Google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?
+family=Bebas+Neue&family=Big+Shoulders+Stencil:opsz,
+wght@10..72,100..900&family=Bitcount+Prop+Single:wght@100..
+900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Jost:ital,
+wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,
+500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+
+<style>
+  /* Dropdown hover animation fix */
+  .dropdown:hover .dropdown-content {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  .dropdown-content {
+    opacity: 0;
+  }
+</style>
+
+
+  <body>
+<header class="bg-[#f2f1eb] shadow-sm">
+
+  <!-- This section is for large devices -->
+  <section class="hidden lg:flex items-center justify-between px-6 py-5">
+    <!-- Left: Logo -->
+    <div>
+      <img
+        class="h-10 lg:h-16 object-cover"
+        src="Assests/Bookify.png"
+        alt="Bookify Logo"
+      />
+    </div>
+
+    <!-- Center: Navigation Items -->
+    <ul class="  menu menu-horizontal gap-10 text-xl">
+      <li>
+        <a class="group relative transition duration-300 hover:-translate-y-1 hover:scale-110">
+          Home
+          <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-gray-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </li>
+      <li>
+        <a class="group relative transition duration-300 hover:-translate-y-1 hover:scale-110">
+          Featured
+          <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-gray-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </li>
+      <li>
+        <a class="group relative transition duration-300 hover:-translate-y-1 hover:scale-110">
+          Popular
+          <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-gray-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </li>
+      <li>
+        <a class="group relative transition duration-300 hover:-translate-y-1 hover:scale-110">
+          Offer
+          <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-gray-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </li>
+      <li>
+        <a class="group relative transition duration-300 hover:-translate-y-1 hover:scale-110">
+          Articles
+          <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-gray-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </li>
+    </ul>
+
+    <!-- Right: Search & Profile -->
+    <div class="flex items-center gap-4">
+      <!-- Search -->
+        <div class="relative w-48 transition-all" id="searchWrapper">
+          <input type="text" placeholder="Search..." id="searchInput"
+            class="w-full py-2 pl-10 pr-4 text-gray-700 bg-[#f2f1eb] border rounded-full outline-none transition-all border-gray-300" />
+          <div class="absolute inset-y-0 left-0 flex items-center pl-3">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 text-gray-400 transition-all" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+
+      <!-- Profile Dropdown -->
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar relative group">
+          <div class="w-10 rounded-full overflow-hidden ring-2 ring-gray-200 group-hover:ring-blue-400 transition-all duration-300">
+            <img
+              alt="User Profile"
+              src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+              class="transform group-hover:scale-110 transition-transform duration-300"
+            />
+          </div>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content bg-[#f2f1eb] rounded-box z-10 mt-3 w-52 p-2 shadow-lg transform scale-0 origin-top transition-all duration-200 ease-out"
+        >
+          <li>
+            <a class="justify-between hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors duration-200 py-2 px-3">
+              Profile
+              <span class="badge badge-primary">New</span>
+            </a>
+          </li>
+          <li><a class="hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors duration-200 py-2 px-3">Settings</a></li>
+          <li><a class="hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors duration-200 py-2 px-3">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+<!-- This section is for md and sm -->
+
+<section class="block lg:hidden">
+
+<div class="flex items-center justify-between px-4 py-3 shadow-sm ">
+  <!-- Left side: Logo + Menu -->
+  <div class="flex flex-col lg:flex-row items-start lg:items-center gap-2">
+    <!-- Logo -->
+    <div>
+      <img class="h-10 object-cover" src="Assests/Bookify.png" alt="Bookify Logo" />
+    </div>
+
+    <!-- Menu dropdown -->
+    <div class="relative">
+      <button id="menuToggle" class="btn btn-ghost flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h7" />
+        </svg>
+        <span class="text-sm font-medium">Menu</span>
+      </button>
+
+      <ul id="mobileMenu"
+        class="menu menu-sm absolute left-0 mt-2 w-52 bg-[#f2f1eb] p-2 rounded-box shadow z-50 transform scale-95 opacity-0 transition-all duration-300 ease-in-out pointer-events-none">
+        <li><a>Home</a></li>
+        <li><a>Featured</a></li>
+        <li><a>Popular</a></li>
+        <li><a>Offer</a></li>
+        <li><a>Articles</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Right side: Search + Profile -->
+  <div class="flex items-center gap-6 ml-auto">
+    <!-- Search -->
+    <div id="searchWrapperSmall" class="relative w-15 sm:w-24  lg:w-32 transition-all duration-300">
+      <input type="text" placeholder="Search" id="searchInputSmall"
+        class="w-full py-2 pl-10 pr-4 text-gray-700 bg-[#f2f1eb] border rounded-full outline-none border-gray-300 transition-all" />
+      <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+        <svg xmlns="http://www.w3.org/2000/svg"
+          class="w-5 h-5 text-gray-400 transition-colors" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Profile Dropdown -->
+    <div class="dropdown dropdown-end ml-auto">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar relative group">
+        <div
+          class="w-10 rounded-full overflow-hidden ring-2 ring-gray-200 group-hover:ring-blue-400 transition-all duration-300">
+          <img alt="User Profile"
+            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+            class="transform group-hover:scale-110 transition-transform duration-300" />
+        </div>
+      </div>
+      <ul tabindex="0"
+        class="menu menu-sm dropdown-content bg-[#f2f1eb] rounded-box z-10 mt-3 w-52 p-2 shadow-lg transform scale-0 origin-top transition-all duration-200 ease-out">
+        <li>
+          <a
+            class="justify-between hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors duration-200 py-2 px-3">
+            Profile
+            <span class="badge badge-primary">New</span>
+          </a>
+        </li>
+        <li><a class="hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors duration-200 py-2 px-3">Settings</a></li>
+        <li><a class="hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors duration-200 py-2 px-3">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+</section>
+
+
+
+</header>
+
+    <script src="js/animation.js"></script>
+  </body>
+</html>
