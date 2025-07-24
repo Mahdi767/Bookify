@@ -72,3 +72,42 @@
 
 
 
+  // Js for carrosel
+
+   
+        let currentIndex = 0;
+        const items = document.querySelectorAll('.carousel-item');
+        const totalItems = items.length;
+        const container = document.querySelector('.carousel-container');
+
+        function showSlide(index) {
+            items.forEach((item, i) => {
+                item.classList.add('hidden');
+                if (i === index) {
+                    item.classList.remove('hidden');
+                    if (index > currentIndex) {
+                        item.classList.add('slide-left');
+                    } else if (index < currentIndex) {
+                        item.classList.add('slide-right');
+                    }
+                    setTimeout(() => {
+                        item.classList.remove('slide-left', 'slide-right');
+                    }, 50);
+                }
+            });
+            currentIndex = index;
+        }
+
+        document.querySelector('.nav-button.next').addEventListener('click', () => {
+            const nextIndex = (currentIndex + 1) % totalItems;
+            showSlide(nextIndex);
+        });
+
+        document.querySelector('.nav-button.prev').addEventListener('click', () => {
+            const prevIndex = (currentIndex - 1 + totalItems) % totalItems;
+            showSlide(prevIndex);
+        });
+
+        // Initialize with first slide
+        showSlide(currentIndex);
+  
