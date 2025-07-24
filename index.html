@@ -296,10 +296,10 @@ Build once. Run everywhere.
 <h1 class="text-center text-5xl font-semibold py-5">Featured Books</h1>
 
 <!-- Book section -->
-<div class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 mx-auto lg:p-10 justify-items-center">
+<div class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2  mx-auto lg:p-10 justify-items-center sm:gap-y-2 ">
 
   <!-- Card 01 -->
-<div class="w-72 bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+<div class="w-72 bg-yellow-50 rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
   <figure class="bg-gray-100 p-3 flex justify-center items-center h-56">
     <img
       src="Assests/books/image 30.png"
@@ -320,7 +320,7 @@ Build once. Run everywhere.
   </div>
 </div>
   <!-- Card 02 -->
-<div class="w-72 bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+<div class="w-72 bg-yellow-50 rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
   <figure class="bg-gray-100 p-3 flex justify-center items-center h-56">
     <img
       src="Assests/books/image 31.png"
@@ -341,7 +341,7 @@ Build once. Run everywhere.
   </div>
 </div>
   <!-- Card 03 -->
-<div class="w-72 bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+<div class="w-72 bg-yellow-50 rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
   <figure class="bg-gray-100 p-3 flex justify-center items-center h-56">
     <img
       src="Assests/books/image 29.png"
@@ -362,7 +362,7 @@ Build once. Run everywhere.
   </div>
 </div>
   <!-- Card 04 -->
-<div class="w-72 bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+<div class="w-72 bg-yellow-50 rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
   <figure class="bg-gray-100 p-3 flex justify-center items-center h-56">
     <img
       src="Assests/books/image 23.png"
@@ -383,13 +383,55 @@ Build once. Run everywhere.
   </div>
 </div>
 
-
-
-
 </div>
 
-  </section>
+<div class="w-full mt-8 flex justify-center">
+  <div class="h-0.5 w-1/2 bg-[#f2f1eb]"></div>
+</div>
+</section>
  
+
+
+<!-- Best selling -->
+
+<section class="bg-[#edebe4] flex justify-center items-center">
+  <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-20 max-w-3xl w-full p-6 m-5 transition-all duration-700 ease-in-out hover:scale-[1.02]">
+
+    <!-- Image -->
+    <figure class="m-0 animate-fade-in-left">
+      <img src="Assests/books/image40.jpeg" alt="Book Cover"
+        class="max-w-xs max-h-[600px] shadow-xl rounded-lg transition-transform duration-700 hover:scale-105">
+    </figure>
+
+    <!-- Text -->
+    <div class="pt-6 lg:pt-0 lg:pl-6 flex-1 text-center lg:text-left animate-fade-in-right">
+      <h2 class="text-3xl font-bold uppercase text-gray-700">Best Selling Book</h2>
+      <div class="border-t-2 border-gray-300 my-4 w-1/2 mx-auto lg:mx-0"></div>
+      <p class="text-gray-600">by Laurence Moroney</p>
+      <h3 class="text-xl text-gray-800 my-2">AI and Machine Learning for Coders</h3>
+      <h5 class="text-sm text-gray-600 my-2">
+        If you're looking to make a career move from programmer to AI specialist, this is the ideal place to start.
+        Based on Laurence Moroney's extremely successful AI courses, this introductory book provides a hands-on,
+        code-first approach to help you build confidence while you learn key topics.
+      </h5>
+      <div class="text-xl text-gray-500 my-5">$45.00</div>
+      <div class="space-x-0 space-y-3 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row justify-center lg:justify-start items-center">
+        <a href="#_"
+          class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-red-500 rounded-xl group">
+          <span
+            class="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-red-700 rounded group-hover:-mr-4 group-hover:-mt-4">
+            <span
+              class="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
+          </span>
+          <span
+            class="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full translate-y-full bg-red-600 rounded-2xl group-hover:mb-12 group-hover:translate-x-0"></span>
+          <span class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-white">Get it now</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
 
     <script src="js/animation.js"></script>
   </body>
