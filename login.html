@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/daisyui@5"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!--Google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?
+family=Bebas+Neue&family=Big+Shoulders+Stencil:opsz,
+wght@10..72,100..900&family=Bitcount+Prop+Single:wght@100..
+900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Jost:ital,
+wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,
+500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+
+<body>
+<section class="hidden lg:flex items-center justify-between px-6 py-5 bg-[#f7f1e4] shadow-sm sticky top-0 z-50 ">
+  <!-- Left: Logo with link -->
+  <div>
+    <a href="index.html">
+      <img
+        class="h-10 lg:h-16 object-cover"
+        src="/Assests/Bookify.png"
+        alt="Bookify Logo"
+      />
+    </a>
+  </div>
+</section>
+
+
+
+<section class="block lg:hidden  sticky top-0 z-50 bg-[#f7f1e4]">
+
+<div class="flex items-center justify-between px-4 py-3 shadow-sm ">
+   <div><a href="index.html">
+      <img class="h-10 object-cover" src="Assests/Bookify.png" alt="Bookify Logo" /> </a>
+    </div>
+  </section>
+
+
+<!-- Whole Page Background -->
+<div class="min-h-screen bg-[#f2f1eb] flex flex-col items-center justify-center py-10 px-4">
+
+  <!-- Login Box (White Card) -->
+  <div class="w-full max-w-md bg-gray-100 rounded-md p-8 shadow-sm mb-6">
+    <h2 class="text-2xl font-bold mb-6 text-center">Login</h2>
+
+    <!-- Username -->
+    <label class="block mb-2 text-sm text-gray-700" for="username">Username or Email</label>
+    <input
+      type="text"
+      id="username"
+      class="w-full border-b border-gray-300 rounded-xl outline-none mb-4 p-2 focus:border-purple-500 transition"
+      placeholder="Enter your username or email"
+    />
+
+    <!-- Password -->
+    <label class="block mb-2 text-sm text-gray-700" for="password">Password</label>
+    <input
+      type="password"
+      id="password"
+      class="w-full border-b border-gray-300 rounded-xl outline-none mb-4 p-2 focus:border-purple-500 transition"
+      placeholder="Enter your password"
+    />
+
+    <!-- Remember Me + Forgot -->
+    <div class="flex items-center justify-between mt-2 mb-6">
+      <label class="inline-flex items-center text-sm" for="remember">
+        <input type="checkbox" id="remember" class="mr-2" />
+        Remember Me
+      </label>
+      <a href="#" class="text-sm text-purple-600 hover:underline">Forgot Password</a>
+    </div>
+
+    <!-- Login Button -->
+    <button
+      type="submit"
+      class="w-full bg-purple-600 text-white py-2 rounded-xl hover:bg-purple-700 transition cursor-pointer"
+    >
+      Login
+    </button>
+
+    <!-- Create Account -->
+    <p class="text-center text-sm mt-4">
+      Don’t have an account?
+      <a href="#" class="text-purple-600 hover:underline">Create an account</a>
+    </p>
+  </div>
+
+  <!-- Divider -->
+  <div class="w-full max-w-md flex items-center mb-4 px-2">
+    <hr class="flex-grow border-gray-400" />
+    <span class="mx-4 text-gray-500 whitespace-nowrap">Or</span>
+    <hr class="flex-grow border-gray-400" />
+  </div>
+
+  <!-- Social Login Buttons -->
+  <div class="w-full max-w-md space-y-3 px-2">
+    <button
+      class="w-full bg-white flex items-center justify-center border border-gray-400 rounded-full py-2 hover:bg-gray-50 cursor-pointer transition"
+    >
+      <img
+        src="https://img.icons8.com/color/20/000000/facebook-new.png"
+        class="mr-2"
+        alt="Facebook Logo"
+      />
+      Continue with Facebook
+    </button>
+
+    <button
+      class="w-full bg-white flex items-center justify-center border border-gray-400 rounded-full py-2 hover:bg-gray-50 cursor-pointer transition"
+    >
+      <img
+        src="https://img.icons8.com/color/20/000000/google-logo.png"
+        class="mr-2"
+        alt="Google Logo"
+      />
+      Continue with Google
+    </button>
+  </div>
+</div>
+
+    
+</body>
+</html>

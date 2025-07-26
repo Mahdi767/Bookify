@@ -1,5 +1,5 @@
 .text-font{
-font-family: "Big Shoulders Stencil", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 
@@ -44,6 +44,12 @@ font-family: "Big Shoulders Stencil", sans-serif;
   scroll-margin-top: 100px; /* or whatever height your navbar is */
 }
  #Home-items {
+  scroll-margin-top: 80px; /* or whatever height your navbar is */
+}
+#popular-book {
+  scroll-margin-top: 100px; /* or whatever height your navbar is */
+}
+#offer-book {
   scroll-margin-top: 100px; /* or whatever height your navbar is */
 }
 
@@ -64,3 +70,16 @@ Featured book divider animation
     background-size: 200% 200%;
     animation: gradient-slide 3s linear infinite;
   }
+
+
+  /* <!-- This section is for carrosel --> */
+ 
+        .carousel-item {
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide-left {
+            transform: translateX(-100%);
+        }
+        .slide-right {
+            transform: translateX(100%);
+        }

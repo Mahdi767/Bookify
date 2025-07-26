@@ -42,7 +42,7 @@ wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Manrope:wght@200..
 
 
   <body>
-<header class="bg-[#f2f1eb] shadow-sm sticky top-0 z-50 backdrop-blur-xs">
+<header class="bg-[#f7f1e4] shadow-sm sticky top-0 z-50 backdrop-blur-sm">
 
   <!-- This section is for large devices -->
   <section class="hidden lg:flex items-center justify-between px-6 py-5">
@@ -70,13 +70,13 @@ wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Manrope:wght@200..
         </a>
       </li>
       <li>
-        <a class="group relative transition duration-300 hover:-translate-y-1 hover:scale-110">
+        <a id="popular-link-large"  class="group relative transition duration-300 hover:-translate-y-1 hover:scale-110">
           Popular
           <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-gray-500 transition-all duration-300 group-hover:w-full"></span>
         </a>
       </li>
       <li>
-        <a class="group relative transition duration-300 hover:-translate-y-1 hover:scale-110">
+        <a id="offer-link-large" class="group relative transition duration-300 hover:-translate-y-1 hover:scale-110">
           Offer
           <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-gray-500 transition-all duration-300 group-hover:w-full"></span>
         </a>
@@ -105,36 +105,12 @@ wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Manrope:wght@200..
           </div>
         </div>
 
-      <!-- Profile Dropdown -->
-      <div class="dropdown dropdown-end">
-        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar relative group">
-          <div class="w-10 rounded-full overflow-hidden ring-2 ring-gray-200 group-hover:ring-blue-400 transition-all duration-300">
-            <img
-              alt="User Profile"
-              src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
-              class="transform group-hover:scale-110 transition-transform duration-300"
-            />
-          </div>
-        </div>
-        <ul
-          tabindex="0"
-          class="menu menu-sm dropdown-content bg-[#f2f1eb] rounded-box z-10 mt-3 w-52 p-2 shadow-lg transform scale-0 origin-top transition-all duration-200 ease-out"
-        >
-          <li>
-            <a class="justify-between hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors duration-200 py-2 px-3">
-              Profile
-              <span class="badge badge-primary">New</span>
-            </a>
-          </li>
-          <li><a class="hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors duration-200 py-2 px-3">Settings</a></li>
-          <li><a class="hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors duration-200 py-2 px-3">Logout</a></li>
-        </ul>
-      </div>
+      <!-- Login -->
+<a href="login.html"><button class="btn btn-primary  sm:btn-md md:btn-md lg:btn-md xl:btn-md">Login</button></a>
     </div>
   </section>
 
 <!-- This section is for md and sm -->
-
 <section class="block lg:hidden">
 
 <div class="flex items-center justify-between px-4 py-3 shadow-sm ">
@@ -160,8 +136,8 @@ wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Manrope:wght@200..
         class="menu menu-sm absolute left-0 mt-2 w-52 bg-[#f2f1eb] p-2 rounded-box shadow z-50 transform scale-95 opacity-0 transition-all duration-300 ease-in-out pointer-events-none">
         <li><a id="Home-sm">Home</a></li>
         <li><a id="Featured-link-small">Featured</a></li>
-        <li><a>Popular</a></li>
-        <li><a>Offer</a></li>
+        <li><a id="popular-link-sm">Popular</a></li>
+        <li><a id="offer-link-sm">Offer</a></li>
         <li><a>Articles</a></li>
       </ul>
     </div>
@@ -184,50 +160,15 @@ wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Manrope:wght@200..
     </div>
 
     <!-- Profile Dropdown -->
-    <div class="dropdown dropdown-end ml-auto">
-      <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar relative group">
-        <div
-          class="w-10 rounded-full overflow-hidden ring-2 ring-gray-200 group-hover:ring-blue-400 transition-all duration-300">
-          <img alt="User Profile"
-            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
-            class="transform group-hover:scale-110 transition-transform duration-300" />
-        </div>
-      </div>
-      <ul tabindex="0"
-        class="menu menu-sm dropdown-content bg-[#f2f1eb] rounded-box z-10 mt-3 w-52 p-2 shadow-lg transform scale-0 origin-top transition-all duration-200 ease-out">
-        <li>
-          <a
-            class="justify-between hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors duration-200 py-2 px-3">
-            Profile
-            <span class="badge badge-primary">New</span>
-          </a>
-        </li>
-        <li><a class="hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors duration-200 py-2 px-3">Settings</a></li>
-        <li><a class="hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors duration-200 py-2 px-3">Logout</a></li>
-      </ul>
-    </div>
+<a href="login.html"><button class="btn btn-primary  sm:btn-md md:btn-md lg:btn-md xl:btn-md">Login</button></a>
   </div>
 </div>
 
 
 </section>
 
-
-
 </header>
 
-<!-- This section is for carrosel -->
-   <style>
-        .carousel-item {
-            transition: transform 0.5s ease-in-out;
-        }
-        .slide-left {
-            transform: translateX(-100%);
-        }
-        .slide-right {
-            transform: translateX(100%);
-        }
-    </style>
 
 <section herf="#Home-items" id="Home-items" class="bg-[#f2f1eb]">
 
@@ -279,6 +220,7 @@ Build once. Run everywhere.
         <button class="nav-button next absolute right-4 text-white bg-black/50 p-2 rounded-full z-10">></button>
     </div>
   </section>
+<!-- Explore more -->
 
 <div class="w-full flex justify-center items-center py-8 px-4">
   <div class="border-t border-gray-300 w-full max-w-xl relative">
@@ -288,9 +230,8 @@ Build once. Run everywhere.
   </div>
 </div>
 
+
   <!-- This section is for Featured -->
-
-
   <section id="Featured-book" class="bg-[#f2f1eb]  ">
 
 <h1   href="#Featured-book" class="text-4xl sm:text-5xl lg:text-6xl font-semibold font-sans text-center py-5">Featured Books</h1>
@@ -399,6 +340,7 @@ Build once. Run everywhere.
  
 
 
+
 <!-- Best selling -->
 
 <section class="bg-[#edebe4] flex justify-center items-center">
@@ -440,7 +382,333 @@ Build once. Run everywhere.
   </div>
 </section>
 
+
+<!-- Popular Books -->
+
+  <section id="popular-book" class="bg-[#f2f1eb]  ">
+
+<h1   href="#popular-book" class="text-4xl sm:text-5xl lg:text-6xl font-semibold font-sans text-center py-5">Popular Books</h1>
+
+<!-- Divider with animation -->
+<div class="h-1 w-24 rounded-full mx-auto mb-6 animated-gradient"
+     style="background-image: linear-gradient(270deg, #0ea5e9, #a5f3fc, #0ea5e9);">
+</div>
+
+
+<!-- Book section -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-2 place-items-center lg:p-8 mx-auto lg:space-y-4">
+
+
+  <!-- Card 01 -->
+<div class="w-72 bg-yellow-50 rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+  <figure class="bg-gray-100 p-3 flex justify-center items-center h-56">
+    <img
+      src="Assests/books/image 30.png"
+      alt="Software Engineering at Google"
+      class="object-contain h-full w-auto" />
+  </figure>
+
+  <div class="p-3 space-y-1">
+    <h2 class="text-base font-semibold text-gray-800 leading-snug">Software Engineering at Google</h2>
+    <p class="text-xs text-gray-500">by Titus Winters</p>
+
+    <div class="flex items-center justify-between pt-2">
+      <p class="text-lg font-bold text-purple-600 font-mono">$15.50</p>
+      <button class="bg-purple-600 hover:bg-purple-700 text-white px-3 py-1.5 rounded-full text-xs transition-colors duration-200">
+        Buy Now
+      </button>
+    </div>
+  </div>
+</div>
+  <!-- Card 02 -->
+<div class="w-72 bg-yellow-50 rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+  <figure class="bg-gray-100 p-3 flex justify-center items-center h-56">
+    <img
+      src="Assests/books/image 31.png"
+      alt="Software Engineering at Google"
+      class="object-contain h-full w-auto" />
+  </figure>
+
+  <div class="p-3 space-y-1">
+    <h2 class="text-base font-semibold text-gray-800 leading-snug">Learn JavaScript Quickly</h2>
+    <p class="text-xs text-gray-500">by Dan Vanderkam</p>
+
+    <div class="flex items-center justify-between pt-2">
+      <p class="text-lg font-bold text-purple-600 font-mono">$17.67</p>
+      <button class="bg-purple-600 hover:bg-purple-700 text-white px-3 py-1.5 rounded-full text-xs transition-colors duration-200">
+        Buy Now
+      </button>
+    </div>
+  </div>
+</div>
+  <!-- Card 03 -->
+<div class="w-72 bg-yellow-50 rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+  <figure class="bg-gray-100 p-3 flex justify-center items-center h-56">
+    <img
+      src="Assests/books/image 29.png"
+      alt=""
+      class="object-contain h-full w-auto" />
+  </figure>
+
+  <div class="p-3 space-y-1">
+    <h2 class="text-base font-semibold text-gray-800 leading-snug">Python Crash Course</h2>
+    <p class="text-xs text-gray-500">by Eric Matthes</p>
+
+    <div class="flex items-center justify-between pt-2">
+      <p class="text-lg font-bold text-purple-600 font-mono">$19.36</p>
+      <button class="bg-purple-600 hover:bg-purple-700 text-white px-3 py-1.5 rounded-full text-xs transition-colors duration-200">
+        Buy Now
+      </button>
+    </div>
+  </div>
+</div>
+  <!-- Card 04 -->
+<div class="w-72 bg-yellow-50 rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+  <figure class="bg-gray-100 p-3 flex justify-center items-center h-56">
+    <img
+      src="Assests/books/image 23.png"
+      alt=""
+      class="object-contain h-full w-auto" />
+  </figure>
+
+  <div class="p-3 space-y-1">
+    <h2 class="text-base font-semibold text-gray-800 leading-snug">Effective TypeScript</h2>
+    <p class="text-xs text-gray-500">by Dan Vanderkam</p>
+
+    <div class="flex items-center justify-between pt-2">
+      <p class="text-lg font-bold text-purple-600 font-mono">$26.49 </p>
+      <button class="bg-purple-600 hover:bg-purple-700 text-white px-3 py-1.5 rounded-full text-xs transition-colors duration-200">
+        Buy Now
+      </button>
+    </div>
+  </div>
+</div>
+  <!-- Card 01 -->
+<div class="w-72 bg-yellow-50 rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+  <figure class="bg-gray-100 p-3 flex justify-center items-center h-56">
+    <img
+      src="Assests/books/image 30.png"
+      alt="Software Engineering at Google"
+      class="object-contain h-full w-auto" />
+  </figure>
+
+  <div class="p-3 space-y-1">
+    <h2 class="text-base font-semibold text-gray-800 leading-snug">Software Engineering at Google</h2>
+    <p class="text-xs text-gray-500">by Titus Winters</p>
+
+    <div class="flex items-center justify-between pt-2">
+      <p class="text-lg font-bold text-purple-600 font-mono">$15.50</p>
+      <button class="bg-purple-600 hover:bg-purple-700 text-white px-3 py-1.5 rounded-full text-xs transition-colors duration-200">
+        Buy Now
+      </button>
+    </div>
+  </div>
+</div>
+  <!-- Card 02 -->
+<div class="w-72 bg-yellow-50 rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+  <figure class="bg-gray-100 p-3 flex justify-center items-center h-56">
+    <img
+      src="Assests/books/image 31.png"
+      alt="Software Engineering at Google"
+      class="object-contain h-full w-auto" />
+  </figure>
+
+  <div class="p-3 space-y-1">
+    <h2 class="text-base font-semibold text-gray-800 leading-snug">Learn JavaScript Quickly</h2>
+    <p class="text-xs text-gray-500">by Dan Vanderkam</p>
+
+    <div class="flex items-center justify-between pt-2">
+      <p class="text-lg font-bold text-purple-600 font-mono">$17.67</p>
+      <button class="bg-purple-600 hover:bg-purple-700 text-white px-3 py-1.5 rounded-full text-xs transition-colors duration-200">
+        Buy Now
+      </button>
+    </div>
+  </div>
+</div>
+  <!-- Card 03 -->
+<div class="w-72 bg-yellow-50 rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+  <figure class="bg-gray-100 p-3 flex justify-center items-center h-56">
+    <img
+      src="Assests/books/image 29.png"
+      alt=""
+      class="object-contain h-full w-auto" />
+  </figure>
+
+  <div class="p-3 space-y-1">
+    <h2 class="text-base font-semibold text-gray-800 leading-snug">Python Crash Course</h2>
+    <p class="text-xs text-gray-500">by Eric Matthes</p>
+
+    <div class="flex items-center justify-between pt-2">
+      <p class="text-lg font-bold text-purple-600 font-mono">$19.36</p>
+      <button class="bg-purple-600 hover:bg-purple-700 text-white px-3 py-1.5 rounded-full text-xs transition-colors duration-200">
+        Buy Now
+      </button>
+    </div>
+  </div>
+</div>
+  <!-- Card 04 -->
+<div class="w-72 bg-yellow-50 rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+  <figure class="bg-gray-100 p-3 flex justify-center items-center h-56">
+    <img
+      src="Assests/books/image 23.png"
+      alt=""
+      class="object-contain h-full w-auto" />
+  </figure>
+
+  <div class="p-3 space-y-1">
+    <h2 class="text-base font-semibold text-gray-800 leading-snug">Effective TypeScript</h2>
+    <p class="text-xs text-gray-500">by Dan Vanderkam</p>
+
+    <div class="flex items-center justify-between pt-2">
+      <p class="text-lg font-bold text-purple-600 font-mono">$26.49 </p>
+      <button class="bg-purple-600 hover:bg-purple-700 text-white px-3 py-1.5 rounded-full text-xs transition-colors duration-200">
+        Buy Now
+      </button>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="w-full mt-8 flex justify-center">
+  <div class="h-0.5 w-1/2 bg-[#f2f1eb]"></div>
+</div>
+</section>
+
+
+
+<!-- Qoutes -->
+
+<div class="w-full bg-[#edebe4]  mx-auto ">
+  <div class="py-8  ">
+    <h1 class="text-center text-font text-3xl lg:text-5xl">Quote of the day</h1>
+<br>
+<!-- Divider with animation -->
+<div class="h-1 w-24 rounded-full mx-auto mb-6 animated-gradient"
+   style="background-image: linear-gradient(270deg, #a0522d, #deb887, #a0522d);"
+>
+</div>
+
+    <blockquote id="quote-box" class="text-center text-xl font-medium text-gray-600 transition-opacity duration-700 ease-in-out opacity-100 p-2">
+      “Talk is cheap. Show me the code.”
+      <footer class="mt-4 text-sm text-gray-500">– Linus Torvalds</footer>
+    </blockquote>
+  </div>
+</div>
+
+<!-- Offers -->
+
+  <section id="offer-book" class="bg-[#f2f1eb]  ">
+
+<h1   href="#offer-book" class="text-4xl sm:text-5xl lg:text-6xl font-semibold font-sans text-center py-5">Books with offer</h1>
+
+<!-- Divider with animation -->
+<div class="h-1 w-24 rounded-full mx-auto mb-6 animated-gradient"
+     style="background-image: linear-gradient(270deg, #22c55e, #bef264, #22c55e);">
+</div>
+
+
+<!-- Book section -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-2 place-items-center lg:p-8 mx-auto">
+
+
+  <!-- Card 01 -->
+<div class="w-72 bg-yellow-50 rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+  <figure class="bg-gray-100 p-3 flex justify-center items-center h-56">
+    <img
+      src="Assests/books/image 30.png"
+      alt="Software Engineering at Google"
+      class="object-contain h-full w-auto" />
+  </figure>
+
+  <div class="p-3 space-y-1">
+    <h2 class="text-base font-semibold text-gray-800 leading-snug">Software Engineering at Google</h2>
+    <p class="text-xs text-gray-500">by Titus Winters</p>
+
+    <div class="flex items-center justify-between pt-2">
+      <p class="text-lg font-bold text-purple-600 font-mono">$15.50</p>
+      <button class="bg-purple-600 hover:bg-purple-700 text-white px-3 py-1.5 rounded-full text-xs transition-colors duration-200">
+        Buy Now
+      </button>
+    </div>
+  </div>
+</div>
+  <!-- Card 02 -->
+<div class="w-72 bg-yellow-50 rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+  <figure class="bg-gray-100 p-3 flex justify-center items-center h-56">
+    <img
+      src="Assests/books/image 31.png"
+      alt="Software Engineering at Google"
+      class="object-contain h-full w-auto" />
+  </figure>
+
+  <div class="p-3 space-y-1">
+    <h2 class="text-base font-semibold text-gray-800 leading-snug">Learn JavaScript Quickly</h2>
+    <p class="text-xs text-gray-500">by Dan Vanderkam</p>
+
+    <div class="flex items-center justify-between pt-2">
+      <p class="text-lg font-bold text-purple-600 font-mono">$17.67</p>
+      <button class="bg-purple-600 hover:bg-purple-700 text-white px-3 py-1.5 rounded-full text-xs transition-colors duration-200">
+        Buy Now
+      </button>
+    </div>
+  </div>
+</div>
+  <!-- Card 03 -->
+<div class="w-72 bg-yellow-50 rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+  <figure class="bg-gray-100 p-3 flex justify-center items-center h-56">
+    <img
+      src="Assests/books/image 29.png"
+      alt=""
+      class="object-contain h-full w-auto" />
+  </figure>
+
+  <div class="p-3 space-y-1">
+    <h2 class="text-base font-semibold text-gray-800 leading-snug">Python Crash Course</h2>
+    <p class="text-xs text-gray-500">by Eric Matthes</p>
+
+    <div class="flex items-center justify-between pt-2">
+      <p class="text-lg font-bold text-purple-600 font-mono">$19.36</p>
+      <button class="bg-purple-600 hover:bg-purple-700 text-white px-3 py-1.5 rounded-full text-xs transition-colors duration-200">
+        Buy Now
+      </button>
+    </div>
+  </div>
+</div>
+  <!-- Card 04 -->
+<div class="w-72 bg-yellow-50 rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+  <figure class="bg-gray-100 p-3 flex justify-center items-center h-56">
+    <img
+      src="Assests/books/image 23.png"
+      alt=""
+      class="object-contain h-full w-auto" />
+  </figure>
+
+  <div class="p-3 space-y-1">
+    <h2 class="text-base font-semibold text-gray-800 leading-snug">Effective TypeScript</h2>
+    <p class="text-xs text-gray-500">by Dan Vanderkam</p>
+
+    <div class="flex items-center justify-between pt-2">
+      <p class="text-lg font-bold text-purple-600 font-mono">$26.49 </p>
+      <button class="bg-purple-600 hover:bg-purple-700 text-white px-3 py-1.5 rounded-full text-xs transition-colors duration-200">
+        Buy Now
+      </button>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="w-full mt-8 flex justify-center">
+  <div class="h-0.5 w-1/2 bg-[#f2f1eb]"></div>
+</div>
+</section>
+
+
+
+
 <script src="js/Dom.js"></script>
+<script src="js/Quotes.js"></script>
     <script src="js/animation.js"></script>
   </body>
 </html>
