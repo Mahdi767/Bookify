@@ -1,46 +1,40 @@
-  const searchInput = document.getElementById('searchInput');
-  const searchWrapper = document.getElementById('searchWrapper');
-  const searchIcon = searchWrapper.querySelector('svg');
+// For large search input
+searchInput.addEventListener('focus', () => {
+  searchWrapper.classList.add('w-32', 'lg:w-64');
+  searchInput.classList.remove('bg-[#f5f1e9]', 'border-[#8b5e3c]');
+  searchInput.classList.add('bg-white', 'border-[#c99a6b]');
+  searchIcon.classList.remove('text-[#8b5e3c]');
+  searchIcon.classList.add('text-[#c99a6b]');
+});
 
-  searchInput.addEventListener('focus', () => {
-    searchWrapper.classList.add('w-32', 'lg:w-64');
-    searchInput.classList.remove('bg-[#f2f1eb]', 'border-gray-300');
-    searchInput.classList.add('bg-white', 'border-blue-500');
-    searchIcon.classList.remove('text-gray-400');
-    searchIcon.classList.add('text-blue-500');
-  });
+searchInput.addEventListener('blur', () => {
+  searchWrapper.classList.remove('w-32', 'lg:w-64');
+  searchWrapper.classList.add('w-20', 'sm:w-24', 'lg:w-48');
+  searchInput.classList.remove('bg-white', 'border-[#c99a6b]');
+  searchInput.classList.add('bg-[#f5f1e9]', 'border-[#8b5e3c]');
+  searchIcon.classList.remove('text-[#c99a6b]');
+  searchIcon.classList.add('text-[#8b5e3c]');
+});
 
-  searchInput.addEventListener('blur', () => {
-    searchWrapper.classList.remove('w-32', 'lg:w-64');
-    searchWrapper.classList.add('w-20', 'sm:w-24', 'lg:w-48');
-    searchInput.classList.remove('bg-white', 'border-blue-500');
-    searchInput.classList.add('bg-[#f2f1eb]', 'border-gray-300');
-    searchIcon.classList.remove('text-blue-500');
-    searchIcon.classList.add('text-gray-400');
-  });
+// For small search input
+searchInputSmall.addEventListener('focus', () => {
+  searchWrapperSmall.classList.remove('w-20', 'sm:w-24', 'lg:w-32');
+  searchWrapperSmall.classList.add('w-32', 'lg:w-48');
+  searchInputSmall.classList.remove('bg-[#f5f1e9]', 'border-[#8b5e3c]');
+  searchInputSmall.classList.add('bg-white', 'border-[#c99a6b]');
+  searchIconSmall.classList.remove('text-[#8b5e3c]');
+  searchIconSmall.classList.add('text-[#c99a6b]');
+});
 
+searchInputSmall.addEventListener('blur', () => {
+  searchWrapperSmall.classList.remove('w-32', 'lg:w-48');
+  searchWrapperSmall.classList.add('w-20', 'sm:w-24', 'lg:w-32');
+  searchInputSmall.classList.remove('bg-white', 'border-[#c99a6b]');
+  searchInputSmall.classList.add('bg-[#f5f1e9]', 'border-[#8b5e3c]');
+  searchIconSmall.classList.remove('text-[#c99a6b]');
+  searchIconSmall.classList.add('text-[#8b5e3c]');
+});
 
- const searchInputSmall = document.getElementById('searchInputSmall');
-  const searchWrapperSmall = document.getElementById('searchWrapperSmall');
-  const searchIconSmall = searchWrapperSmall.querySelector('svg');
-
-  searchInputSmall.addEventListener('focus', () => {
-    searchWrapperSmall.classList.remove('w-20', 'sm:w-24', 'lg:w-32');
-    searchWrapperSmall.classList.add('w-32', 'lg:w-48');
-    searchInputSmall.classList.remove('bg-[#f2f1eb]', 'border-gray-300');
-    searchInputSmall.classList.add('bg-white', 'border-blue-500');
-    searchIconSmall.classList.remove('text-gray-400');
-    searchIconSmall.classList.add('text-blue-500');
-  });
-
-  searchInputSmall.addEventListener('blur', () => {
-    searchWrapperSmall.classList.remove('w-32', 'lg:w-48');
-    searchWrapperSmall.classList.add('w-20', 'sm:w-24', 'lg:w-32');
-    searchInputSmall.classList.remove('bg-white', 'border-blue-500');
-    searchInputSmall.classList.add('bg-[#f2f1eb]', 'border-gray-300');
-    searchIconSmall.classList.remove('text-blue-500');
-    searchIconSmall.classList.add('text-gray-400');
-  });
 // <!-- Js for menu -->
 
   const toggleBtn = document.getElementById('menuToggle');

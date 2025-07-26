@@ -37,3 +37,30 @@ font-family: "Big Shoulders Stencil", sans-serif;
   .animate-fade-in-right {
     animation: fade-in-right 0.8s ease-out both;
   }
+
+
+
+  #Featured-book {
+  scroll-margin-top: 100px; /* or whatever height your navbar is */
+}
+ #Home-items {
+  scroll-margin-top: 100px; /* or whatever height your navbar is */
+}
+
+/*
+
+Featured book divider animation
+*/
+
+  @keyframes gradient-slide {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 200% 50%;
+    }
+  }
+  .animated-gradient {
+    background-size: 200% 200%;
+    animation: gradient-slide 3s linear infinite;
+  }

@@ -58,13 +58,13 @@ wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Manrope:wght@200..
     <!-- Center: Navigation Items -->
     <ul class="  menu menu-horizontal gap-10 text-xl">
       <li>
-        <a class="group relative transition duration-300 hover:-translate-y-1 hover:scale-110">
+        <a id="Home-large" class="group relative transition duration-300 hover:-translate-y-1 hover:scale-110">
           Home
           <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-gray-500 transition-all duration-300 group-hover:w-full"></span>
         </a>
       </li>
       <li>
-        <a class="group relative transition duration-300 hover:-translate-y-1 hover:scale-110">
+        <a id="Featured-link-large" class="group relative transition duration-300 hover:-translate-y-1 hover:scale-110">
           Featured
           <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-gray-500 transition-all duration-300 group-hover:w-full"></span>
         </a>
@@ -158,8 +158,8 @@ wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Manrope:wght@200..
 
       <ul id="mobileMenu"
         class="menu menu-sm absolute left-0 mt-2 w-52 bg-[#f2f1eb] p-2 rounded-box shadow z-50 transform scale-95 opacity-0 transition-all duration-300 ease-in-out pointer-events-none">
-        <li><a>Home</a></li>
-        <li><a>Featured</a></li>
+        <li><a id="Home-sm">Home</a></li>
+        <li><a id="Featured-link-small">Featured</a></li>
         <li><a>Popular</a></li>
         <li><a>Offer</a></li>
         <li><a>Articles</a></li>
@@ -229,7 +229,7 @@ wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Manrope:wght@200..
         }
     </style>
 
-<section class="bg-[#f2f1eb]">
+<section herf="#Home-items" id="Home-items" class="bg-[#f2f1eb]">
 
  <div class="flex items-center justify-center min-h-[calc(100vh-64px)] pt-10 relative">
         <button class="nav-button prev absolute left-4 text-white bg-black/50 p-2 rounded-full z-10"><</button>
@@ -291,12 +291,19 @@ Build once. Run everywhere.
   <!-- This section is for Featured -->
 
 
-  <section class="bg-[#f2f1eb]  ">
+  <section id="Featured-book" class="bg-[#f2f1eb]  ">
 
-<h1 class="text-center text-5xl font-semibold py-5">Featured Books</h1>
+<h1   href="#Featured-book" class="text-4xl sm:text-5xl lg:text-6xl font-semibold font-sans text-center py-5">Featured Books</h1>
+
+<!-- Divider with animation -->
+<div class="h-1 w-24 rounded-full mx-auto mb-6 animated-gradient"
+     style="background-image: linear-gradient(270deg, #22c55e, #bef264, #22c55e);">
+</div>
+
 
 <!-- Book section -->
-<div class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2  mx-auto lg:p-10 justify-items-center sm:gap-y-2 ">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-2 place-items-center lg:p-8 mx-auto">
+
 
   <!-- Card 01 -->
 <div class="w-72 bg-yellow-50 rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
@@ -433,6 +440,7 @@ Build once. Run everywhere.
   </div>
 </section>
 
+<script src="js/Dom.js"></script>
     <script src="js/animation.js"></script>
   </body>
 </html>
