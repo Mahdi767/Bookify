@@ -7,6 +7,7 @@
 </head>
 
 
+
   <link
     href="https://cdn.jsdelivr.net/npm/daisyui@5"
     rel="stylesheet"
@@ -15,8 +16,6 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-
 
   <!--Google font-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,10 +31,11 @@ wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Manrope:wght@200..
   />
 
 <body>
+    
 <section class="hidden lg:flex items-center justify-between px-6 py-5 bg-[#f7f1e4] shadow-sm sticky top-0 z-50 ">
   <!-- Left: Logo with link -->
   <div>
-    <a href="#"  onclick="showLoadingAndNavigate('index.html')" >
+    <a href="#" onclick="showLoadingAndNavigate('index.html')" >
       <img
         class="h-10 lg:h-16 object-cover"
         src="Assests/Bookify.png"
@@ -47,10 +47,12 @@ wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Manrope:wght@200..
 
 
 
+
+
 <section class="block lg:hidden  sticky top-0 z-50 bg-[#f7f1e4]">
 
 <div class="flex items-center justify-between px-4 py-3 shadow-sm ">
-   <div><a href=""  onclick="showLoadingAndNavigate('index.html')" >
+   <div><a href="#" onclick="showLoadingAndNavigate('index.html')" >
       <img class="h-10 object-cover" src="Assests/Bookify.png" alt="Bookify Logo" /> </a>
     </div>
   </section>
@@ -61,8 +63,16 @@ wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Manrope:wght@200..
 
   <!-- Login Box (White Card) -->
   <div class="w-full max-w-md bg-gray-100 rounded-md p-8 shadow-sm mb-6">
-    <h2 class="text-2xl font-bold mb-6 text-center">Login</h2>
+    <h2 class="text-2xl font-bold mb-6 text-center">Create an account</h2>
 
+    <!-- name -->
+    <label class="block mb-2 text-sm text-gray-700" for="username">Name</label>
+    <input
+      type="text"
+      id="username"
+      class="w-full border-b border-gray-300 rounded-xl outline-none mb-4 p-2 focus:border-purple-500 transition"
+      placeholder="Enter your name"
+    />
     <!-- Username -->
     <label class="block mb-2 text-sm text-gray-700" for="username">Username or Email</label>
     <input
@@ -80,28 +90,36 @@ wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Manrope:wght@200..
       class="w-full border-b border-gray-300 rounded-xl outline-none mb-4 p-2 focus:border-purple-500 transition"
       placeholder="Enter your password"
     />
+    <!-- Password -->
+    <label class="block mb-2 text-sm text-gray-700" for="password">Confirm Password</label>
+    <input
+      type="password"
+      id="password"
+      class="w-full border-b border-gray-300 rounded-xl outline-none mb-4 p-2 focus:border-purple-500 transition"
+      placeholder="Confirm your password"
+    />
 
-    <!-- Remember Me + Forgot -->
+    <!-- Remember Me + Forgot
     <div class="flex items-center justify-between mt-2 mb-6">
       <label class="inline-flex items-center text-sm" for="remember">
         <input type="checkbox" id="remember" class="mr-2" />
         Remember Me
       </label>
       <a href="#" class="text-sm text-purple-600 hover:underline">Forgot Password</a>
-    </div>
+    </div> -->
 
     <!-- Login Button -->
     <button
       type="submit"
       class="w-full bg-purple-600 text-white py-2 rounded-xl hover:bg-purple-700 transition cursor-pointer"
     >
-      Login
+      Create an account
     </button>
 
     <!-- Create Account -->
     <p class="text-center text-sm mt-4">
-      Don’t have an account?
-      <a href="#" onclick="showLoadingAndNavigate('create_account.html')" class="text-purple-600 hover:underline">Create an account</a>
+      Already have an account?
+      <a href="#" onclick="showLoadingAndNavigate('login.html')" class="text-purple-600 hover:underline">Login</a>
     </p>
   </div>
 
@@ -139,9 +157,11 @@ wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Manrope:wght@200..
 </div>
 
 
+
 <div id="loading" class="fixed inset-0 bg-white flex items-center justify-center z-50 hidden">
   <div class="loader"></div>
-</div>
-    <script src="/js/animation.js"></script>
+
+  <script src="/js/animation.js"></script>
+
 </body>
 </html>

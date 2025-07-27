@@ -105,3 +105,30 @@ searchInputSmall.addEventListener('blur', () => {
         // Initialize with first slide
         showSlide(currentIndex);
   
+
+// Animation for page swtiching
+
+  function showLoader() {
+    const loader = document.getElementById('loading');
+    if (loader) loader.classList.remove('hidden');
+  }
+  function hideLoader() {
+    const loader = document.getElementById('loading');
+    if (loader) loader.classList.add('hidden');
+  }
+  function showLoadingAndNavigate(url) {
+    showLoader();
+    setTimeout(() => {
+      window.location.href = url;
+    }, 500);
+  }
+
+  
+  window.addEventListener('pageshow', function (event) {
+  
+    if (performance.getEntriesByType('navigation')[0].type === 'back_forward') {
+      showLoader();
+      setTimeout(hideLoader, 600);
+    }
+  });
+  window.addEventListener('load', hideLoader);
