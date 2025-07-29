@@ -132,3 +132,7 @@ searchInputSmall.addEventListener('blur', () => {
     }
   });
   window.addEventListener('load', hideLoader);
+
+
+
+  

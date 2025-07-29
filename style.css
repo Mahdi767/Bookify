@@ -53,6 +53,10 @@
   scroll-margin-top: 100px; /* or whatever height your navbar is */
 }
 
+#articles{
+ scroll-margin-top: 100px; 
+}
+
 /*
 
 Featured book divider animation
@@ -100,3 +104,32 @@ Featured book divider animation
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+
+
+.typewrite {
+  display: inline-block;
+  white-space: nowrap;
+  border-right: 2px solid black;
+  font-family: monospace;
+  overflow: hidden;
+  max-width: 100%;
+  animation:
+    typewriter 4s steps(60, end) forwards,
+    blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+

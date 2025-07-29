@@ -83,3 +83,36 @@ e.preventDefault();
 // document.getElementById('Featured-book').scrollIntoView({behavior:"smooth"});
 scrollIntoOffer();
 })
+
+
+// dom for articles
+function scrollIntoArticles(){
+   
+    const target = document.getElementById('articles');
+   const scrollView = target.scrollIntoView({behavior:"smooth"});
+    return scrollView;
+}
+
+document.getElementById('article-link-large').addEventListener("click",(e)=>{
+e.preventDefault();
+// document.getElementById('Featured-book').scrollIntoView({behavior:"smooth"});
+scrollIntoArticles();
+})
+document.getElementById('article-link-sm').addEventListener("click",(e)=>{
+e.preventDefault();
+// document.getElementById('Featured-book').scrollIntoView({behavior:"smooth"});
+scrollIntoArticles();
+})
+
+
+
+
+// // Search functionality
+// const searchResults = document.getElementById('searchWrapperSmall').addEventListener("keyup",(e)=>{
+// LoadVideos(e.target.value);
+// })
+
+
+// const LoadVideos = (searchWrapperSmall="")=>{
+
+// }
