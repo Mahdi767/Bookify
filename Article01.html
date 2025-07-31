@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookify</title>
+</head>
+
+  <!-- Daisy UI -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/daisyui@5"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!--Google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?
+family=Bebas+Neue&family=Big+Shoulders+Stencil:opsz,
+wght@10..72,100..900&family=Bitcount+Prop+Single:wght@100..
+900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Jost:ital,
+wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,
+500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+
+<body>
+    
+<section class="hidden lg:flex items-center justify-between px-6 py-5 bg-[#f7f1e4] shadow-sm sticky top-0 z-50 ">
+  <!-- Left: Logo with link -->
+  <div>
+    <a href="javascript:void(0)" onclick="showLoadingAndNavigate('index.html')" >
+      <img
+        class="h-10 lg:h-16 object-cover"
+        src="Assests/Bookify.png"
+        alt="Bookify Logo"
+      />
+    </a>
+  </div>
+</section>
+
+
+
+
+
+<section class="block lg:hidden  sticky top-0 z-50 bg-[#f7f1e4]">
+
+<div class="flex items-center justify-between px-4 py-3 shadow-sm ">
+   <div><a href="javascript:void(0)" onclick="showLoadingAndNavigate('index.html')" >
+      <img class="h-10 object-cover" src="Assests/Bookify.png" alt="Bookify Logo" /> </a>
+    </div>
+  </section>
+
+
+<div class="max-w-4xl mx-auto px-6 py-10 bg-white rounded-lg shadow-sm mt-6">
+  <!-- Article Title -->
+  <h1 class="text-4xl font-bold text-gray-900 leading-tight mb-3 font-['EB_Garamond']">
+    The trillion-dollar AI arms race is here
+  </h1>
+
+  <!-- Subtitle -->
+  <h3 class="text-xl text-gray-600 mb-6">
+    Google, Amazon and Meta are pouring billions into AI infrastructure, but at what cost to the planet, creatives, and the grid?
+  </h3>
+
+  <!-- Featured Image -->
+  <img src="Assests/google.jpg" alt="AI infrastructure illustration"
+    class="w-full h-80 object-cover rounded-md mb-6">
+
+  <!-- Byline -->
+  <p class="text-sm text-gray-500 mb-6">
+    By <span class="font-semibold">Johana Bhuiyan</span> and <span class="font-semibold">Dara Kerr</span> — July 31, 2025
+  </p>
+
+  <!-- Intro Paragraph -->
+  <p class="text-lg text-gray-700 leading-relaxed mb-6">
+    Hello, and welcome to TechScape. Johana Bhuiyan and Dara Kerr here, filling in for Blake Montgomery,
+    who’s enjoying the beach but likely getting sunburned.
+  </p>
+
+  <!-- Section Title -->
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4 font-['EB_Garamond']">
+    Tech companies throw billions towards AI infrastructure
+  </h2>
+
+  <!-- Article Body -->
+  <p class="text-gray-700 text-base leading-relaxed mb-4">
+    Tech companies are fighting to claim the title of having the world’s most advanced AI. The goal is to supercharge
+    their bottom line and keep investors and Wall Street happy. But developing the world’s most advanced AI means
+    spending billions on data centers and other physical infrastructure to house and power the supercomputers needed for AI.
+    It also means a drain on natural resources and the grid in the areas surrounding data centers worldwide.
+  </p>
+
+  <p class="text-gray-700 text-base leading-relaxed mb-4">
+    Still, last week’s earnings reports made clear that tech firms are forging ahead. Google announced it was planning to
+    spend <span class="font-semibold text-purple-600">$85bn</span> on building out its AI and cloud infrastructure just in 2025 –
+    $10bn more than it initially predicted. And the company expects that spending to increase again in 2026.
+    For context, Google reported $94bn in revenue in the second quarter of this year. Chief executive Sundar Pichai said
+    Google is in a “tight supply environment” when it comes to the infrastructure needed to support AI processing and compute.
+    The results of this increased spending would still take years to be realized, he said.
+  </p>
+
+  <p class="text-gray-700 text-base leading-relaxed mb-4">
+    Google isn’t alone. Amazon has said it plans to spend <span class="font-semibold text-purple-600">$100bn</span> in 2025 –
+    the “vast majority” of which will go to powering the AI capabilities of its cloud division. As a point of comparison,
+    Amazon spent just under <span class="font-semibold text-purple-600">$80bn</span> in 2024.
+  </p>
+
+  <p class="text-gray-700 text-base leading-relaxed mb-4">
+    “Sometimes people make the assumption that if you’re able to decrease the cost of any type of technology component …
+    that somehow it leads to less total spend in technology,” said Amazon’s CEO Andy Jassy during an earnings call in February.
+    “We’ve never seen that to be the case.”
+  </p>
+
+  <p class="text-gray-700 text-base leading-relaxed mb-4">
+    Meta, too, has upped the amount it plans to spend on AI infrastructure. In June, Mark Zuckerberg said the company planned
+    to spend “hundreds of billions” of dollars on building out a network of massive data centers across the US including one
+    that the firm expects to be up and running in 2026. Originally, executives said the firm was projected to spend
+    <span class="font-semibold text-purple-600">$65bn</span> in 2025 but adjusted that to anywhere between
+    <span class="font-semibold text-purple-600">$64bn</span> and <span class="font-semibold text-purple-600">$72bn</span>.
+  </p>
+
+  <p class="text-gray-700 text-base leading-relaxed">
+    Meta and Amazon report earnings this week.
+  </p>
+</div>
+
+
+
+
+
+<div id="loading" class="fixed inset-0 bg-white flex items-center justify-center z-50 hidden">
+  <div class="loader"></div>
+
+  <script src="js/animation.js"></script>
+
+</body>
+</html>

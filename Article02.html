@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookify</title>
+</head>
+
+  <!-- Daisy UI -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/daisyui@5"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!--Google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?
+family=Bebas+Neue&family=Big+Shoulders+Stencil:opsz,
+wght@10..72,100..900&family=Bitcount+Prop+Single:wght@100..
+900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Jost:ital,
+wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,
+500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+
+<body>
+    
+<section class="hidden lg:flex items-center justify-between px-6 py-5 bg-[#f7f1e4] shadow-sm sticky top-0 z-50 ">
+  <!-- Left: Logo with link -->
+  <div>
+    <a href="javascript:void(0)" onclick="showLoadingAndNavigate('index.html')" >
+      <img
+        class="h-10 lg:h-16 object-cover"
+        src="Assests/Bookify.png"
+        alt="Bookify Logo"
+      />
+    </a>
+  </div>
+</section>
+
+
+
+
+
+<section class="block lg:hidden  sticky top-0 z-50 bg-[#f7f1e4]">
+
+<div class="flex items-center justify-between px-4 py-3 shadow-sm ">
+   <div><a href="javascript:void(0)" onclick="showLoadingAndNavigate('index.html')" >
+      <img class="h-10 object-cover" src="Assests/Bookify.png" alt="Bookify Logo" /> </a>
+    </div>
+  </section>
+
+
+<div class="max-w-4xl mx-auto px-6 py-10 bg-white rounded-lg shadow-sm mt-6">
+  <!-- Article Title -->
+  <h1 class="text-4xl font-bold text-gray-900 leading-tight mb-3 font-['EB_Garamond']">
+    18 months. 12,000 questions. A whole lot of anxiety.  
+    What I learned from reading students’ ChatGPT logs
+  </h1>
+
+  <!-- Subtitle -->
+  <h3 class="text-xl text-gray-600 mb-6">
+    Students increasingly use AI chatbots for anything from academic queries to emotional quandaries. 
+    But are they missing out on the chance to make their own mistakes? Three undergrads reveal all …
+  </h3>
+
+  <!-- Featured Image -->
+  <img src="Assests/graduation.png" alt="Students using AI illustration"
+    class="w-full h-80 object-cover rounded-md mb-6">
+
+  <!-- Byline -->
+  <p class="text-sm text-gray-500 mb-6">
+    By <span class="font-semibold">Jeremy Ettinghausen</span> — Sun 27 Jul 2025, 06.00 BST
+  </p>
+
+  <!-- Article Body -->
+  <p class="text-lg text-gray-700 leading-relaxed mb-6">
+    Student life is hard. Making new friends is hard. Writing essays is hard. Admin is hard. Budgeting is hard. 
+    Finding out what trousers exist in the world other than black ones is also, apparently, hard.
+  </p>
+
+  <p class="text-gray-700 text-base leading-relaxed mb-4">
+    Fortunately, for an AI-enabled generation of students, help with the complexities of campus life is just a prompt away. 
+    If you are really stuck on an essay or can’t decide between management consulting or a legal career, 
+    or need suggestions on what you can cook with tomatoes, mushrooms, beetroot, mozzarella, olive oil and rice, 
+    then ChatGPT is there. It will listen to you, analyse your inputs, and offer up a perfectly structured paper, 
+    a convincing cover letter, or a workable recipe for tomato and mushroom risotto with roasted beetroot and mozzarella.
+  </p>
+
+  <p class="text-gray-700 text-base leading-relaxed mb-4">
+    I know this because three undergraduates have given me permission to eavesdrop on every conversation 
+    they have had with ChatGPT over the past 18 months. Every eye-opening prompt, every revealing answer.
+  </p>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4 font-['EB_Garamond']">
+    AI at the heart of student life
+  </h2>
+
+  <p class="text-gray-700 text-base leading-relaxed mb-4">
+    There has been a deluge of news about the student use of AI tools at universities, described by some as an existential 
+    crisis in higher education. “ChatGPT has unravelled the entire academic project,” said New York magazine, 
+    quoting a study suggesting that just two months after its 2022 launch, 90% of US college students were using ChatGPT 
+    to help with assignments. A similar study in the UK published this year found that 92% of students were using AI in some form, 
+    with nearly one in five admitting to including AI-generated text directly in their work.
+  </p>
+
+  <p class="text-gray-700 text-base leading-relaxed mb-4">
+    ChatGPT launched in November 2022 and swiftly grew to 100 million users just two months later. 
+    In May this year, it was the fifth most-visited website globally, and, if patterns of previous years continue, 
+    usage will drop over the summer while universities are on hiatus and ramp up again in September when term starts. 
+    Students are the canaries in the AI coalmine. They see its potential to make their studies less strenuous, 
+    to analyse and parse dense texts, and to elevate their writing to honours-degree standard. 
+    And, once ChatGPT has proven helpful in one aspect of life, it quickly becomes a go-to for other needs and challenges.
+  </p>
+
+  <p class="text-gray-700 text-base leading-relaxed mb-4">
+    The students who have given me unrestricted access to the ChatGPT Plus account they share, 
+    and permission to quote from it, are all second-year undergraduates at a top British university. 
+    Rohan studies politics and is the named account administrator. Joshua is studying history. 
+    And Nathaniel, the heaviest user of the account, consulted ChatGPT extensively before changing courses 
+    from maths to computer sciences.
+  </p>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4 font-['EB_Garamond']">
+    12,000 prompts, 18 months, and a lot of surprises
+  </h2>
+
+  <p class="text-gray-700 text-base leading-relaxed mb-4">
+    I thought their chat log would contain a lot of academic research and bits and pieces of more random searches and queries. 
+    I didn’t expect to find nearly 12,000 prompts and responses over an 18-month period, covering everything 
+    from essay writing to mental health advice, career counselling, and even fancy dress inspiration.
+  </p>
+
+  <p class="text-gray-700 text-base leading-relaxed mb-4">
+    Around half of all the conversations with “Chat” related to academic research, back and forths on individual essays 
+    often going on for a dozen or more tightly packed pages of text. A query that started with Joshua asking ChatGPT 
+    to fill in gaps in an essay finished 103 prompts and 58,000 words later with ChatGPT not only supplying the introduction 
+    and conclusion but also compiling references and assessing the finished essay against marking criteria.
+  </p>
+
+  <p class="text-gray-700 text-base leading-relaxed mb-4">
+    The sophistication that goes into each piece of work co-authored by student and AI is impressive – 
+    but it raises serious ethical questions. 
+  </p>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4 font-['EB_Garamond']">
+    Beyond academics: AI for life advice
+  </h2>
+
+  <p class="text-gray-700 text-base leading-relaxed mb-4">
+    While academic work makes up the bulk of their interactions with ChatGPT, the students also use it for personal queries. 
+    From health questions to emotional struggles, they turn to AI as an ever-present, judgment-free assistant. 
+    But its answers are often unsourced, and the risk of misinformation looms large.
+  </p>
+
+  <p class="text-gray-700 text-base leading-relaxed mb-4">
+    For example, Nathaniel asked ChatGPT to build him a hydration and nutrition plan for a boxing match. 
+    While reasonable, the advice was unsourced and lacked expert verification. 
+    This willingness to outsource decision-making to AI shows just how much students now trust it – 
+    even when it shouldn't be the final authority.
+  </p>
+
+  <p class="text-gray-700 text-base leading-relaxed">
+    Students are learning, growing, and relying on AI more than ever. 
+    Whether that is helping them or making them dependent on it is the real question universities will soon have to answer.
+  </p>
+</div>
+
+
+
+
+
+
+<div id="loading" class="fixed inset-0 bg-white flex items-center justify-center z-50 hidden">
+  <div class="loader"></div>
+
+  <script src="js/animation.js"></script>
+
+</body>
+</html>

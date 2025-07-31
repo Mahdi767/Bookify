@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookify</title>
+</head>
+
+  <!-- Daisy UI -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/daisyui@5"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!--Google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?
+family=Bebas+Neue&family=Big+Shoulders+Stencil:opsz,
+wght@10..72,100..900&family=Bitcount+Prop+Single:wght@100..
+900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Jost:ital,
+wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,
+500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+
+<body>
+    
+<section class="hidden lg:flex items-center justify-between px-6 py-5 bg-[#f7f1e4] shadow-sm sticky top-0 z-50 ">
+  <!-- Left: Logo with link -->
+  <div>
+    <a href="javascript:void(0)" onclick="showLoadingAndNavigate('index.html')" >
+      <img
+        class="h-10 lg:h-16 object-cover"
+        src="Assests/Bookify.png"
+        alt="Bookify Logo"
+      />
+    </a>
+  </div>
+</section>
+
+
+
+
+
+<section class="block lg:hidden  sticky top-0 z-50 bg-[#f7f1e4]">
+
+<div class="flex items-center justify-between px-4 py-3 shadow-sm ">
+   <div><a href="javascript:void(0)" onclick="showLoadingAndNavigate('index.html')" >
+      <img class="h-10 object-cover" src="Assests/Bookify.png" alt="Bookify Logo" /> </a>
+    </div>
+  </section>
+
+
+<div class="max-w-4xl mx-auto px-6 py-10 bg-white rounded-lg shadow-sm mt-6">
+  <!-- Article Title -->
+  <h1 class="text-4xl font-bold text-gray-900 leading-tight mb-3 font-['EB_Garamond']">
+    Fearing AI, I was reluctant to use ChatGPT. But friends, it changed my life
+  </h1>
+
+  <!-- Subtitle -->
+  <h3 class="text-xl text-gray-600 mb-6">
+    Newly diagnosed with ADHD, I now rely on ChatGPT to prioritise tasks without judgment – proof that AI can be both dangerous and life-changing.
+  </h3>
+
+  <!-- Featured Image -->
+  <img src="Assests/AI.png" alt="AI and ADHD illustration"
+    class="w-full h-80 object-cover rounded-md mb-6">
+
+  <!-- Byline -->
+  <p class="text-sm text-gray-500 mb-6">
+    By <span class="font-semibold">Van Badham</span> — Wed 11 Sep 2024, 00.24 BST
+  </p>
+
+  <!-- Article Body -->
+  <p class="text-lg text-gray-700 leading-relaxed mb-6">
+    It’s easy to be convinced that the myriad applications of AI pave a fun but nonetheless alarming digital path towards doom, doom, doom.
+  </p>
+
+  <p class="text-gray-700 text-base leading-relaxed mb-4">
+    Let’s start with “slop”. It’s the term now used for AI-created graphic content pushed out on social media to attract engagement 
+    using spectacular, surreal images – the kind that can digitally mash Jesus with prawns in photographic detail.
+  </p>
+
+  <p class="text-gray-700 text-base leading-relaxed mb-4">
+    Those not entranced by the bizarre can be dangerously tempted by beauty, in the proliferation of anonymous social media accounts 
+    posting AI-enhanced images celebrating western architecture and art. Historians and extremism researchers warn of a subtle pipeline 
+    promoting cultural superiority through aesthetic bait.
+  </p>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4 font-['EB_Garamond']">
+    From skepticism to reliance
+  </h2>
+
+  <p class="text-gray-700 text-base leading-relaxed mb-4">
+    My personal anxieties about AI extended far beyond its misuse in politics or disinformation. 
+    As a writer, I discovered that my work had been used to train AI models without consent or compensation – a discouraging blow to any creator.
+  </p>
+
+  <p class="text-gray-700 text-base leading-relaxed mb-4">
+    Yet, my relationship with AI changed after I was formally diagnosed with ADHD. 
+    In a moment of curiosity, I started using ChatGPT not as a threat but as an aid. 
+    Months later, I find myself relying on it daily: the technology helps me quiet the mental noise and manage tasks that once felt overwhelming.
+  </p>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4 font-['EB_Garamond']">
+    How AI became my silent assistant
+  </h2>
+
+  <p class="text-gray-700 text-base leading-relaxed mb-4">
+    The “time blindness” that comes with ADHD often leads to overcrowded schedules and constant lateness. 
+    Now I outsource task prioritization to “the robot” on my phone. 
+    It calculates travel times, suggests routes, and even adjusts my itinerary based on real-time changes.
+  </p>
+
+  <p class="text-gray-700 text-base leading-relaxed mb-4">
+    It remembers my dietary preferences, breaks down my exercise plan, and even advises me what to wear for the weather. 
+    Most importantly, it never judges me. For someone with ADHD, that’s transformative.
+  </p>
+
+  <blockquote class="border-l-4 border-purple-500 pl-4 italic text-gray-600 my-6">
+    “One of ADHD’s principal tortures is shame in asking for help with simple tasks. The robot knows no judgment.”
+  </blockquote>
+
+  <p class="text-gray-700 text-base leading-relaxed mb-4">
+    The Australian government is now calling for guardrails on AI. Regulation is necessary, but so is recognizing 
+    that AI can also be an empowering tool when used responsibly.
+  </p>
+
+  <p class="text-gray-700 text-base leading-relaxed">
+    I may still be wary of AI’s darker implications, but I can’t deny its impact on my life. 
+    As technology theorist Melvin Kranzberg once said: 
+    “Technology is neither good nor bad; nor is it neutral.” 
+    For me, it’s become a lifeline.
+  </p>
+</div>
+
+
+
+
+
+
+
+<div id="loading" class="fixed inset-0 bg-white flex items-center justify-center z-50 hidden">
+  <div class="loader"></div>
+
+  <script src="js/animation.js"></script>
+
+</body>
+</html>
